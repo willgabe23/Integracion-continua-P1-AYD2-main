@@ -1,0 +1,35 @@
+<%- layout('layouts/main.ejs') %>
+
+<div class="container p-5"> <br><br>
+    <main class="form-signin">
+        <form action="/modificar" method="post">
+            <h1 class="h3 mb-3 fw-normal">ACTUALIZAR DATOS</h1>
+
+            <div class="form-floating">
+                <input type="email" name="email" class="form-control" id="floatingInput"
+                    placeholder="name@example.com" value="<%= user.email %>" >
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" name="password" class="form-control" id="floatingPassword"
+                    placeholder="Password" value="<%= user.pass %>"  >
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="username" class="form-control" id="name"
+                    placeholder="nombre usuario" value="<%= user.name %>">
+                <label for="name">nombre usuario</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">ENVIAR</button>
+            <br>
+            <% if(msjUpdate) { %>
+                <div class="alert alert-danger" role="alert">
+                    <%= msjUpdate %>
+                </div>
+                <% } %>
+            <br>
+            <p class="mt-5 mb-3 text-muted">&copy; P A S C U A L D O M I N G O 2 0 2 2</p>
+        </form>
+    </main>
+</div>

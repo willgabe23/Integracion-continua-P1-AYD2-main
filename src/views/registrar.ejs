@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>
+    ayd2
+</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script type="text/javascript" src="./usuarios.js"></script>
+</head>
+
+<body>
+    <div class="container p-5"> <br><br>
+        <main class="form-signin">
+            <form action="/registrar" method="post">
+                <h1 class="h3 mb-3 fw-normal">Registrarse</h1>
+
+                <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" name="name" class="form-control" id="name"
+                        placeholder="nombre usuario">
+                    <label for="name">nombre usuario</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" name="password" class="form-control" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+               
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                <br>
+                
+                <% if(msjRegistro) { %>
+                    <div class="alert alert-danger" role="alert">
+                        <%= msjRegistro %>
+                    </div>
+                    <% } %>
+                <p class="mt-5 mb-3 text-muted">&copy; P A S C U A L D O M I N G O 2 0 2 2</p>
+            </form>
+        </main>
+    </div>
+
+</body>
+
+
+
+</html>

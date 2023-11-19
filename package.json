@@ -1,0 +1,32 @@
+{
+  "name": "app_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --recursive ./test",
+    "dev": "nodemon src/servidor",
+    "start": "node src/servidor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mocha": "^9.2.1",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "webpack": "^5.69.1",
+    "webpack-dev-middleware": "^5.3.1"
+  },
+  "devDependencies": {
+    "ejs-mate": "^3.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
