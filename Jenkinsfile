@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('copiando repositorio'){
             steps{
-                git branch: 'main', credentialsId: 'ghp_uQ7KZjnooNsZOgopCG2Fb', url: 'https://github.com/PascualDomingo/Integracion-continua-P1-AYD2'
+                git branch: 'main', credentialsId: 'f7708df9c468411ba0e352e0e146ddf1', url: 'https://github.com/willgabe23/Integracion-continua-P1-AYD2-main.git'
             }
         }
         stage('install dependencias'){
