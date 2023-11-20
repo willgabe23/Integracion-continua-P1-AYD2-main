@@ -1,7 +1,7 @@
 {
   "name": "app_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "INTEGRACIÓN CONTINUA (CI) Se debe desarrollar una infraestructura que permita realizar integración continúa utilizando un repositorio de versiones en conjunto con la aplicación Jenkins que permita la descarga de las fuentes desde el control de versiones, su compilación, la ejecución de pruebas y el despliegue de cambios automatizado. Se deberá de contar dentro del repositorio de versiones con el código fuente de una página web, este repositorio está conectado con la aplicación Jenkins la cual detectará el momento cuando se realice un COMMIT/PULL de cambios sobre el código fuente dentro del repositorio de versiones para luego ejecutar una prueba unitaria para verificar que los cambios realizados sean correctos y no provoquen algún error dentro de la página que se encuentra en servicio.",
   "main": "index.js",
   "scripts": {
     "test": "npx mocha --recursive ./test",
@@ -28,5 +28,8 @@
     "ejs-mate": "^3.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
+  },
+  "directories": {
+    "test": "test"
   }
 }
